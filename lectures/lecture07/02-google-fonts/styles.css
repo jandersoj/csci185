@@ -1,1 +1,12 @@
 /* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Kranky&display=swap');
+
+body{
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: 'Kranky', cursive;
+    font-size: 40px;
+}
