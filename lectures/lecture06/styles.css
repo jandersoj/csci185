@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: orange;
+    padding:30px;
+}
+
+
+main > section {
+    border: dotted 3px orangered;
+    display: inline-block;
+    margin: 20px;
+}
