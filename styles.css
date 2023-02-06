@@ -1,10 +1,13 @@
-/* You're welcome to change any of this! */
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 * {
     box-sizing:border-box;
     margin-left:10px
 }
 h1 {
-    color: magenta;
+    font-family: "Rubik Wet Paint";
+    font-size: 40px;
+    color: rgb(255, 85, 255);
     text-shadow: 3px 3px 6px cornflowerblue ;
 }
 
@@ -13,13 +16,25 @@ h2 {
     border-color: darkblue;
     border-radius: 10px;
     margin-right: 10px;
+    padding-left:4px;
 
 }
+
+#truck{
+    color: rgb(0, 72, 206);
+    transition-duration: 2.5s;
+}
+
+#truck:hover{
+    text-shadow: 5px 5px 10px red;
+    margin-left: 200px;
+}
+
 body {
-    background-color:lavender;
+    background-color:rgb(216, 255, 216);
     margin: 0px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:cornflowerblue;
+    color:rgb(23, 136, 206);
     
 }
 
@@ -27,8 +42,14 @@ a:link {
     color:mediumpurple;
 }
 
+a:hover {
+    border-style: dashed;
+    border-color:blueviolet;
+    background-color: gold;
+    font-size: larger;
+}
 a:visited {
-    color:mediumpurple;
+    color:darkorchid;
 }
 
 p, a, li {

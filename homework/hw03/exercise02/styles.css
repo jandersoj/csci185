@@ -1,6 +1,6 @@
 *{
     font-family:'Courier New', Courier, monospace;
-    
+
 }
 body {
     margin: 0;
@@ -17,6 +17,9 @@ main {
     margin-right: 15vw;
 }
 
+main>p{
+    font-weight: bold;
+}
 footer {
     background-color: #EEE;
     padding: 30px;
@@ -68,4 +71,5 @@ footer {
     padding: 30px;
     margin-top: 30px;
     text-align: center;
+    font-weight: bold;
 }
