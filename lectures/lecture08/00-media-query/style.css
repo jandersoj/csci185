@@ -27,6 +27,10 @@ header {
     height: 20vh;
 }
 
+header>button{
+    display: none;
+}
+
 main {
     height: 70vh;
 }
@@ -36,6 +40,36 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    /* Your code here! */
+    /* 4 tablets */
+
+    header {
+        background-color: #333;
+        color: aliceblue;
+    }
+
+    header>button{
+        display: inline-block;
+    }
+
+    main {
+        background-color: rgb(174, 174, 174);
+    }
+
+    footer {
+        background-color: coral;
+    }
 }
 
+
+@media screen and (max-width: 400px) {
+    /* 4 little bitty phones */
+    main {
+        background-color: limegreen;
+    }
+    
+    header>button{
+        display:none;
+    }
+
+
+}
