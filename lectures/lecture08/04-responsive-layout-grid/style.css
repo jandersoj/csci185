@@ -34,12 +34,12 @@ body {
   row-gap: 10px;
 }
 
-.header{
+.header {
   grid-row: 1 / 2; 
   grid-column: 1 / 4;
 }
 
-.sidebar{;
+.sidebar {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
 }

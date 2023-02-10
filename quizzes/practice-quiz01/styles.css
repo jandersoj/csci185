@@ -1,0 +1,35 @@
+body {
+    background-color: #F0F4EF;
+}
+
+header {
+    background-color: #b4cded;
+    text-align: center;
+    padding: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#images img {
+    display: inline-block;
+    width: 28%;
+    margin: 2%;
+}
+
+footer {
+    background-color: #344966;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
