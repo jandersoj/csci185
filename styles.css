@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 
-/* * {
+* {
     box-sizing:border-box;
-    margin-left:10px
-} */
+    margin-left:10px;
+}
 
 body {
     display: grid;
@@ -138,6 +138,16 @@ p, a, li {
         padding-right: 15px;
         grid-column: 1;
     }   
+
+    /* main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        gap: 20px;
+        grid-column: 1;
+    I feel like I need to do something here to make it not have that big 
+    gap to the right but I can't figure it out
+    } */
 
      #tutorials {
         grid-column: 1;
