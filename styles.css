@@ -177,4 +177,9 @@ p, a, li {
         border-radius: 50%;
         margin-right: 10px;
     }
+
+    p, a, li {
+        line-height: 1.2em;
+        font-size: 1em;
+    }
 }
