@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +12,107 @@ body * {
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Your CSS Code Here! */
+
+
+header {
+    background-color: #CC3E58;
+    display: flex;
+    flex-direction: column;
+    color: #FBFFF1;
+}
+nav {
+    color: #FBFFF1;
+    font-family: "Quicksand", sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    list-style-type: none;
+    padding-right: 20px;
+
+}
+
+li {
+    padding: 5px
+}
+
+div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-pic {
+    border-radius: 50% ;
+    border: #FBB1BB solid 8px;
+    width: 150px;
+    align-self: center;
+}
+
+h1, h2 { 
+    font-family: "Henny Penny", cursive;
+}
+
+#about, #projects, #contact{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#about, #contact {
+    background-color: #FBFFF1;
+}
+
+#projects{
+    background-color: #FBB1BB;
+}
+
+.project-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.card img{
+    width: 100%;
+    border: #CC3E58 solid 8px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+form {
+    padding-right: 30px;
+    grid-column: 1/4;
+}
+
+
+footer {
+    background-color: #CC3E58;
+    color: #FBFFF1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #FBFFF1;
+ }
+ 
+ a:hover, a:active {
+     text-decoration: none;
+     color: #FBFFF1;
+     font-weight: 700;
+ }
