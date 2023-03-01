@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20vh 20vw;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-container section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #CCC;
+}
+
+
+#section1 {
+    background: #0c7474;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+#section1:hover {
+    background: purple;
+    transform: scale(3, 2);
+}
+
+
+
+#section2 { 
+    color: darkolivegreen;
+    background-color: darkkhaki;
+    transition: all 0.2s ease-out;
+}
+
+#section2:hover { 
+    color: darkkhaki;
+    font-family:"Rubik Storm";
+    font-size: x-large;
+    background-color: darkolivegreen;
+} 
+
+#section3 { 
+    width: 75px;
+    transition: all 0.3s ease-out;
+    background-color: hotpink;
+}
+
+#section3:hover {
+    transform: rotate(45deg);
+    opacity: 60%;
+    background-color: blueviolet;
+    width: 100%;
+    color: antiquewhite;
+ } 
+
+ a:link {
+    text-decoration: line-through;
+    color: #38302E;
+ }
+ 
+ a:hover {
+     text-decoration:overline;
+     color:aquamarine;
+     font-weight: 700;
+     font-size: xx-large;
+ }
