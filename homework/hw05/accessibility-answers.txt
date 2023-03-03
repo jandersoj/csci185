@@ -1,15 +1,16 @@
 1. What corrections did you have to make?
 
-Your answers here.
+I had to add some aria labels in, but that's it. 
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+Definitely not looking at it, just because it wouldn't be legibly organized. Maybe if you were just using the tab button? but i still kinda doubt it because it might not be in order. 
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
+All of them are accessible and all of them work (except for my funny little go to top button but because that's extra and I'm tired I'm not going to fix it rn)
 
 
 
 Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!
+will do bestie

@@ -10,12 +10,12 @@
     <title>My Portfolio Site</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <div>
@@ -64,17 +64,17 @@
         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
         <div class="contact-details">
             <form method="post" action="#">
-                <div class="row row1">
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <label for="name">name</label>
-                    <input type="email" name="email" id="email" placeholder="Email" />
-                    <label for="email">email</label>
+                <div class="row1">
+                    <input type="text" name="name" id="name" placeholder="Name" aria-label="name"/>
+                    <!-- <label for="name">name</label> -->
+                    <input type="email" name="email" id="email" placeholder="Email" aria-label="email"/>
+                    <!-- <label for="email">email</label> -->
                 </div>
-                <div class="row">
-                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-                    <label for="message">message</label>
+                <div class="row 1">
+                    <textarea name="message" id="message" placeholder="Message" rows="4" aria-label="message"></textarea>
+                    <!-- <label for="message">message</label> -->
                 </div>
-                <div class="row">
+                <div class="row 3">
                     <input id="submit" type="submit" value="Send Message">
                 </div>
             </form>
@@ -105,6 +105,10 @@
     <footer>
         <p>Copyright {{your name}}, 2022.</p>
     </footer>
+
+
+    <button id="top"><a href="#header" id="top-button">Top</a></button>
+    <!-- i absolutely credit mr jakefromSF on stack overflow for this specifically so thank you jake -->
 
 </body>
 </html>

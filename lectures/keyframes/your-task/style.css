@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    
+    background-color: navy;
+    animation-name: sky;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+   }
+
+#mountains {
+    position: absolute;
+    width: 100vw;
+    bottom: 0vh;
+    left: 0;
+    z-index: 100;
+}
+
+#sun {
+    position: absolute;
+    color: #FF3300;
+    bottom: -2vh;
+    left: calc(50vw - 50px); 
+    font-size: 200px;
+
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+    animation-name: sunrise;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+
+@keyframes sunrise {
+    0% { 
+        transform: translate(0, 0);
+        color: #FF3300;
+        font-size: 200px;
+    }
+    100% { 
+        transform: translate(0, -70vh); 
+        color: yellow;
+        font-size: 100px;
+    }
+}
+
+
+@keyframes sky {
+    0% { 
+        background-color: navy;
+    }
+    20%{
+        background-color: plum;
+    }
+    30%{
+        background-color: pink;
+    }
+    40% {
+        background-color: lightsalmon;
+    }
+    60% {
+        background-color: lightskyblue;
+    }
+    100% { 
+        background-color: skyblue;
+    }
+}
+
+#cloud1 {
+    position: absolute;
+    color: #EEE;
+    top: 10px;
+    left: 0px;
+    font-size: 110px;
+    opacity: 60%;
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    transform: translate(-30vw, 0);
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: moveCloudHorizontally;
+    animation-delay: 0.4s;
+    animation-duration: 25s;
+}
+
+#cloud2 {
+    position: absolute;
+    color: #EEE;
+    top: 50px;
+    left: -20px;
+    font-size: 80px;
+    opacity: 70%;
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    transform: translate(-30vw, 0);
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: moveCloudHorizontally;
+    animation-delay: 0.6s;
+    animation-duration: 28s;
+}
+
+#cloud3 {
+    position: absolute;
+    color: #EEE;
+    top: 60px;
+    left: -20px;
+    font-size: 95px;
+    opacity: 60%;
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    transform: translate(-30vw, 0);
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate-reverse;
+    animation-name: moveCloudHorizontally;
+    animation-delay: 0.5s;
+    animation-duration: 27s;
+}
+
+@keyframes moveCloudHorizontally {
+    0% { 
+        transform: translate(-30vw, 0);
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+    }
+}
+
+
