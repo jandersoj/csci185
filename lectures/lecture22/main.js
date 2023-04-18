@@ -26,10 +26,30 @@ fetchCourses();
 
 function search() {
     console.log(data);
-    console.log(data[49].Title);
-    console.log(data[49].Instructors[0].Name);
-
-    document.querySelector('.courses').innerHTML = data[49].Instructors[0].Name;
-
     const searchTerm = document.querySelector('#search_term').value;
-}
+    
+    
+    for (let i = 0; i < data.length; i++){
+
+        if (data[i].Department === searchTerm) {
+            let instructor = 'TBD';
+            if (data[i].Instructors.length > 0) {
+                instructor = data[i].Instructors[0].Name;
+            }
+
+            const template = `
+            
+            <section class="course">
+            <h2>${data[i].Code}: ${data[i].Title} </h2>
+            <p>
+            ${data[i].Days} &bull; ${data[i].Location.FullLocation} &bull; ${data[i].Hours} credit hour(s)
+            </p>
+            <p><strong>${instructor}</strong></p>
+
+            `;
+            document.querySelector('.courses').insertAdjacentHTML(
+                "beforeend", template
+            )
+        }
+    }
+} 
