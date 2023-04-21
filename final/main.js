@@ -37,12 +37,31 @@ function search() {
                 </div>
             `;
             
-            document.querySelector('.items').insertAdjacentHTML(
-                "beforeend", template
-            )
-            // outputElement.innerHTML= template;
-            // ok so im wanting it to make a bunch of cards but then replace the one group of a bunch of
-            // cards with another group of a bunch of cards every time i search something new? tbd
+            // document.querySelector('#search-items').insertAdjacentHTML(
+            //     "beforeend", template
+            // ) this one puts them all down but does not replace when you search again
+
+            document.querySelector('#search-items').innerHTML=template;
+
+            // ok great i have it replacing but i need it now to add all not just one
+            // and i know that trouble is with the template and the id its going into but hmmmmmmmm
         }
     }
 } 
+
+
+for (let i = 0; i < saints.length; i++){
+    const template = ` 
+        <div class="card">
+            <img src= ${saints[i].pic} />
+            <h3> ${saints[i].title}</h3>
+            <p> ${saints[i].desc} </p>
+        </div>
+    `;
+        
+    document.querySelector('#all-items').insertAdjacentHTML(
+        "beforeend", template
+
+    )
+
+}
