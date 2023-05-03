@@ -16,15 +16,23 @@ hehe i should Not have 6 colors but that wave thing was yelling at me and i want
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    background-color: #8ca6c5;
 }
 
 header, section, footer {
     padding: 10px; 
 }
 
+main {
+    padding: 20px;
+    
+}
+
+
+
 header{
     background: #4b6995;
-    color: #C6D3DB;
+    color: #fffff0;
     padding-left: 40px;
     padding-bottom: 20px;
 }
@@ -33,7 +41,23 @@ nav a {
     color:#fffff0;
     text-decoration: none;
     font-weight: bold;
-    padding: 20px;
+    padding: 15px;
+}
+
+.current-tab {
+    background-color:  #C6D3DB;
+    color: #4b6995;
+}
+
+.search-form input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-form button{
+    padding: 10px;
+    background-color: #c6d3db;
+    /* border: 2px #4b6995; */
 }
 
 .items {
@@ -44,11 +68,12 @@ nav a {
     
 }
 .card {
-    border: 2px black solid;
+    border: 2px #4b6995 solid;
     display: inline-block;
     width: calc(25% - 30px);
     margin: 10px;
     padding: 10px;
+    background-color: #c6d3db;
 }
 
 .card img {
